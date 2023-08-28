@@ -1,0 +1,409 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+:root{
+    --primary: rgb(255, 0, 119);
+    --dark: rgb(44, 1, 19);
+    --nav:white;
+    --secondary:#1efff4;
+    
+}
+
+body{
+    background-color: rgb(26, 26, 26);    
+}
+
+.about-page{
+    padding:30px 40px 30px 40px;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;
+}
+
+.nav{
+    
+    display: flex;
+    justify-content: space-between;   
+}
+
+.navbar.active{
+    display: block;
+}
+
+
+.mylogo{
+    color:var(--nav);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.navbar a{
+    color:var(--nav);
+    text-decoration: none;
+    font-size: 20px;         
+    margin-left: 35px;     
+    transition: .2s; 
+}
+
+.navbar a:hover,
+.navbar a.about
+{
+    color: var(--primary);
+}
+
+/*------SECTION ABOUT------*/
+.about-details{
+    padding:30px 40px 30px 40px;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;
+}
+
+ .details-h1{
+    font-weight: 400;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.detail-1{      
+    display:flex;
+    margin-top: 20px;
+    color: white;
+    font-size: 15px;      
+    border-radius: 20px;
+    padding: 20px 20px 20px 20px;
+    transition: .5s ease;
+}
+
+.text-about{
+    margin: 20px 20px 20px 20px;
+}
+
+.final-text{
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.text-about h2{
+    font-weight: 300;
+    font-size: 30px;
+    color:var(--primary);
+    margin-bottom: 30px;
+}
+
+.text-about p{
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.social-media-icons{    
+    margin-top: 50px;
+}
+
+.social-media-icons a{
+    font-size:35px;
+    color:var(--primary);
+    letter-spacing: 40px;
+    transition: .2s;
+}
+
+.social-media-icons a:hover{
+    color: white;   
+}
+
+
+
+.detail-1 img{
+    width: 600px;
+    height: 900px;
+    border-radius: 20px;
+}
+
+.details-p:hover{
+    border-color:rgb(255, 0, 140) ;  
+    transform: scale(1.02);
+}
+
+.education{
+    margin-top: 50px;
+    color: white;
+    font-size: 50px;
+}
+
+.edu-container{
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    border: 2px solid var(--primary);
+    padding: 30px 30px 30px 30px;
+    border-radius: 30px;
+}
+
+.edu{   
+   color: white; 
+   border: 0.5px solid white;
+   background: linear-gradient(to right, rgb(41, 41, 41), rgb(0, 0, 0),rgb(26, 26, 26));
+   padding:5rem 2rem 5rem;
+   border-radius: 2rem;
+   text-align: center;   
+   transition: .5s ease;
+}
+
+.edu:hover{
+    border-color:rgb(255, 0, 140) ;  
+    transform: scale(1.02);
+}
+
+
+.edu-h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.skills-h3{
+    margin-top: 50px;
+    color: white;
+    font-size: 50px;
+}
+
+.front-end{
+    border: 2px solid var(--primary);
+    border-radius: 30px;
+    padding: 20px 20px 20px 20px;
+    transition: .5s ease;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;    
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.front-end:hover{
+    border-color:rgb(255, 0, 140) ;  
+    transform: scale(1.01);
+}
+
+.front-end h3{
+    display:block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size:30px;
+    color: white;
+}
+
+.front-images{
+    display: inline-block;
+    margin: 20px 20px 20px 20px;
+}
+
+.front-images p{
+    color: white;
+}
+
+.images p{
+    color: white;
+    font-size:20px;
+    margin-bottom: 20px;
+}
+.images img{
+    width: 100px;
+    height: 100px;
+}
+
+/*-------------FOOTER-------------*/
+.footer{
+    padding: 20px 20px 20px 20px;
+}
+
+.fotter-bottom{
+    justify-content: space-between;
+    margin-top: 100px;
+    display:flex;   
+    align-items: center;
+}
+.fotter-bottom p{
+    color: aliceblue;
+    font-size: 15px;
+}
+
+
+.footer-icontop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(rgba(243, 243, 243, 0.1),#111111);
+    border: 3px solid rgb(194, 173, 186);
+    border-radius: 10px;
+    
+}
+
+.footer-icontop a i {
+    font-size: 25px;
+    color: #ffffff;
+}
+
+/*-------------END FOOTER-------------*/
+
+/*BREAKPOINTS*/
+
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 595px) {
+    #menu-open{   
+        display: inline-block;    
+        background: transparent;
+        font-size:2.5rem;
+        color: #ffffff;
+        cursor: pointer;
+    }   
+
+    #menu-close{
+        display: none;
+        background: transparent;
+        font-size:2.5rem;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    .navbar{
+        position:fixed;
+        top: 80px;       
+        right: 5%;  
+        width:40%;      
+        flex-direction: column;
+        background: black;
+        display: none;  
+        
+    }
+    .navbar a{  
+        display: block;
+        font-size: 15px;
+        margin: 20px -60px ;                           
+        display: grid;      
+        place-items: center;  
+    }
+       
+    .about-details h1{        
+        font-size: 20px;
+        
+    }
+
+    .detail-1 img{
+        display: none;
+    }
+    .detail-1 h2 {
+        font-size: 20px;
+    }
+
+    .detail-1 p {
+        font-size:15px;
+    }
+
+    .final-text{
+        font-size: 10px;
+    }
+    .front-end{             
+        display: grid;       
+    }
+    
+}
+
+/* Medium screen devices (768px and above) */
+@media (min-width:595px) and (max-width:1024px){
+    #menu-open{   
+        display: inline-block;    
+        background: transparent;
+        font-size:2.5rem;
+        color: #ffffff;
+        cursor: pointer;
+    }   
+
+    #menu-close{
+        display: none;
+        background: transparent;
+        font-size:2.5rem;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    .navbar{        
+        position:fixed;
+        top: 80px;       
+        right: 5%;  
+        width:40%;      
+        flex-direction: column;
+        background: black;
+        display: none;  
+        
+    }
+    .navbar a{          
+        display: block;
+        font-size: 20px;
+        margin: 20px -60px;                           
+        display: grid;      
+        place-items: center;  
+    }
+
+    .about-details h1{        
+        font-size: 40px;
+        
+    }
+
+    .detail-1 img{
+        display: none;
+    }
+    .detail-1 h2 {
+        font-size: 25px;
+    }
+
+    .detail-1 p {
+        font-size:20px;
+    }
+
+    .final-text{
+        font-size: 15px;
+    }
+    .front-end{             
+        display: grid;       
+    }
+}
+
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1025px) {    
+    #menu-open,#menu-close{
+        display: none;
+    }
+        
+    .home-details h1{        
+        font-size:50px;
+        font-weight:600;
+    }
+    
+    .home-details h4{           
+        font-size:20px;
+        font-weight: 300;        
+        letter-spacing: 20px;
+    }
+    
+}    
+
+
+
+
+
+
+
+

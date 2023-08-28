@@ -1,0 +1,268 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+:root{
+    --primary: rgb(255, 0, 119);
+    --dark: rgb(44, 1, 19);
+    --nav:white;
+    --secondary:#1efff4;
+    
+}
+
+body{
+    background-color: rgb(26, 26, 26);    
+}
+
+.graphic-page{
+    padding:30px 40px 30px 40px;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;
+}
+
+.nav{
+    
+    display: flex;
+    justify-content: space-between;   
+}
+
+.navbar.active{
+    display: block;
+}
+
+
+.mylogo{
+    color:var(--nav);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.navbar a{
+    color:var(--nav);
+    text-decoration: none;
+    font-size: 20px;         
+    margin-left: 35px;     
+    transition: .2s; 
+}
+
+.navbar a:hover,
+.navbar a.graphic-projects
+{
+    color: var(--primary);
+}
+
+.graphic-details{        
+    justify-content: center;
+    align-items: center;    
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+}
+
+.graphic h1{   
+   margin-top: 50px;
+   color: white;
+   font-size: 50px;   
+}
+
+.graphic p{
+    margin-top: 30px;
+    color: white;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+
+.graphics{
+    margin-top: 50px;
+    border:2px solid rgb(255, 0, 140); 
+    border-radius: 1.5rem;        
+    background: linear-gradient(to right, rgb(2, 2, 2), rgb(44, 44, 44),rgb(145, 145, 148))
+}
+
+.graphics h1{
+    color: white;
+    font-size:35px;  
+    margin-top:40px;
+}
+
+.sera{
+   
+    display: grid;
+    width: 80%; 
+    margin:50px auto 25px ;
+    margin-bottom: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(250px,10fr)); 
+    grid-gap: 10px;   
+}
+
+.sera img{
+    width: 100%;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.see-more{
+    justify-content: center;
+    align-items: center;    
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+}
+
+.btn{
+    margin-top: 50px;
+    display: inline-block;
+    padding:5px 50px;
+    background: #000000;
+    border-radius: 6px;
+    box-shadow: 0 0 10 #ff0080 ;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    transition: .5s ease;
+    text-decoration: none;
+    border: 2px solid var(--primary);
+}
+
+.btn:hover{
+    background: #4e0229;
+    box-shadow: none;
+}
+
+/*-------------FOOTER-------------*/
+.footer{
+    padding: 20px 20px 20px 20px;
+}
+
+.fotter-bottom{
+    justify-content: space-between;
+    margin-top: 100px;
+    display:flex;   
+    align-items: center;
+}
+.fotter-bottom p{
+    color: aliceblue;
+    font-size: 15px;
+}
+
+
+.footer-icontop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(rgba(243, 243, 243, 0.1),#111111);
+    border: 3px solid rgb(194, 173, 186);
+    border-radius: 10px;
+    
+}
+
+.footer-icontop a i {
+    font-size: 25px;
+    color: #ffffff;
+}
+
+/*-------------END FOOTER-------------*/
+
+/*BREAKPOINTS*/
+
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 595px) {
+    #menu-open{   
+        display: inline-block;    
+        background: transparent;
+        font-size:2.5rem;
+        color: #ffffff;
+        cursor: pointer;
+    }   
+
+    #menu-close{
+        display: none;
+        background: transparent;
+        font-size:2.5rem;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    .navbar{
+        position:fixed;
+        top: 80px;       
+        right: 5%;  
+        width:40%;      
+        flex-direction: column;
+        background: black;
+        display: none;  
+        
+    }
+    .navbar a{  
+        display: block;
+        font-size: 15px;
+        margin: 20px -60px ;                           
+        display: grid;      
+        place-items: center;  
+    }
+    
+    
+}
+
+/* Medium screen devices (768px and above) */
+@media (min-width:595px) and (max-width:1024px){
+    #menu-open{   
+        display: inline-block;    
+        background: transparent;
+        font-size:2.5rem;
+        color: #ffffff;
+        cursor: pointer;
+    }   
+
+    #menu-close{
+        display: none;
+        background: transparent;
+        font-size:2.5rem;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    .navbar{        
+        position:fixed;
+        top: 80px;       
+        right: 5%;  
+        width:40%;      
+        flex-direction: column;
+        background: black;
+        display: none;  
+        
+    }
+    .navbar a{          
+        display: block;
+        font-size: 20px;
+        margin: 20px -60px;                           
+        display: grid;      
+        place-items: center;  
+    }
+    
+}
+
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1025px) {    
+    #menu-open,#menu-close{
+        display: none;
+    }
+        
+    
+    
+}    
+
+
+
+
+
+
+
+
